@@ -1,0 +1,114 @@
+.banner{
+margin-bottom: 2rem;
+    height: 40rem;
+    background-image: linear-gradient(rgba(76, 238, 117, 0.4),rgb(216, 192, 192,0.7)),url('https://images.unsplash.com/photo-1682685797366-715d29e33f9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    /* https://bennettfeely.com/clippy/ */
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+
+  position: relative;
+
+}
+.content{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 20rem;
+
+    position: absolute;
+    left: 20%;
+    top: 12%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 8px;
+}
+.content i{
+    font-size: 3rem;
+}
+.content h3{
+    font-size: 2rem;
+    background-image: linear-gradient(45deg,red,blue,gray);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+
+    animation: fromleft 3s linear 1s 2;
+}
+.content p{
+    font-size: 1.5rem;
+}
+.content button{
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+
+@keyframes fromleft{
+    0%{
+        color: red;
+        transform: translateX(-50rem);
+        opacity: 0;
+    }
+    100%{
+        color: red;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width:500px){
+
+    .banner{
+        width: 100%;
+        margin-bottom: 0.5rem;
+            height: 30rem;
+            background-image: linear-gradient(rgba(76, 238, 117, 0.4),rgb(216, 192, 192,0.7)),url('https://images.unsplash.com/photo-1682685797366-715d29e33f9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=700&q=60');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            /* https://bennettfeely.com/clippy/ */
+            clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+        
+          position: relative;
+        
+        }
+        .content{
+            /* border: 2px solid blue; */
+            width: 50%;
+            height: 15rem;
+        
+            position: absolute;
+            left: 24%;
+            top: 12%;
+        
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+            padding: 8px;
+        }
+        .content i{
+            font-size: 1.75rem;
+        }
+        .content h3{
+            font-size: 1.4rem;
+            background-image: linear-gradient(45deg,red,blue,gray);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+        
+            animation: fromleft 3s linear 1s 2;
+        }
+        .content p{
+            font-size: 1rem;
+        }
+        .content button{
+            
+            height: 2.5rem;
+            border-radius: 1.5rem;
+        }
+
+}

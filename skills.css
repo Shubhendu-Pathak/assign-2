@@ -1,0 +1,142 @@
+.myskills{
+    /* border: 2px solid black; */
+    margin-bottom: 4rem;
+    height: 30rem;
+    padding: 0.5rem;
+}
+.myskills>h1{
+    /* border: 2px solid black; */
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.myskills>h1:before{
+    content: '';
+    background-image: linear-gradient(45deg,red,blue,gray,purple);
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+}
+.progress-bar{
+    height: 75%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+    
+}
+.one{
+    border: 2px solid red;
+    width: 30%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.one>h2{
+    font-size: 2.5rem;
+}
+.out{
+    /* border: 2px solid blue; */
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+background-image: conic-gradient(red 0deg,red 290deg,white 290deg);
+}
+.in{
+    /* border: 2px solid rgb(53, 224, 19); */
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in>h3{
+    font-size: 2rem;
+}
+
+@media (max-width:500px){
+
+    .myskills{
+        /* border: 2px solid black; */
+        margin-bottom: 4rem;
+        height:70rem;
+        padding: 0.5rem;
+    }
+    .myskills>h1{
+        /* border: 2px solid black; */
+        font-size: 2.5rem;
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .myskills>h1:before{
+        content: '';
+        background-image: linear-gradient(45deg,red,blue,gray,purple);
+        height: 30%;
+        width: 80%;
+        position: absolute;
+        left: 2rem;
+        top: 3rem;
+    }
+    .progress-bar{
+        height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+        
+    }
+    .one{
+        border: 2px solid red;
+        background-image: linear-gradient(25deg,aqua,yellow,white);
+        width: 30%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+    }
+    .one>h2{
+        font-size: 2.5rem;
+    }
+    .out{
+        /* border: 2px solid blue; */
+        height: 60%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    background-image: conic-gradient(red 0deg,red 290deg,white 290deg);
+    }
+    .in{
+        /* border: 2px solid rgb(53, 224, 19); */
+        height: 70%;
+        width: 70%;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .in>h3{
+        font-size: 2rem;
+    }
+
+}
